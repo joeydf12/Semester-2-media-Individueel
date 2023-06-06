@@ -1,0 +1,43 @@
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#payoff {
+    width: 80vw;
+    padding: 10px;
+    background-color: orange;
+}
+
+#hotitems {
+    width:80vw;
+    padding: 10px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 20vw;
+    padding: 5px;
+    background-color: blue;
+}
+
+#extra {
+    background-color: blueviolet;
+    width: 80vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.test {
+    width: 20vw;
+    padding: 5px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
