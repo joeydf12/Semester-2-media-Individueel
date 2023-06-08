@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+</head>
+
+<body>
+    <div id="maincontainer">
+        <div class="navbar">
+            <div class="nav1">
+                <div class="navbarli">
+                    <li><a href="/sportkalender/" title="Kalender">Over ons</a></li>
+                    <li><a href="/nieuwsbrief/" title="Nieuwsbrief">Sportkalender</a></li>
+                    <li><a href="/over-ons/" title="Over ons">Matchcenter</a></li>
+                    <li><a href="https://sportnieuws.nl/contact/" title="Nieuws">App</a></li>
+                </div>
+                <div class="navbarsearch">
+                    <input type="text" id="zoekbalk" placeholder="Zoeken naar nieuws">
+                    <button id="zoek" onclick="checkzoekbalk()">zoek</button>
+                </div>
+            </div>
+
+            <div class="nav2">
+                <div class="nav2left">
+                <div class="nav2afb1" ><img id="fotonav1" src="images/sportnieuwslogo.png" alt="" height="160vh"></div>
+                <div class="nav2afb3"><img id="fotonav3" src="images/tekst.png" alt="" height="100vh"></div>
+                </div>
+                <div class="nav2right">
+                <div class="nav2afb2"><img id="fotonav2" src="images/toto.png" alt="" height="100vh"></div>
+            </div>
+                <div id="gifid"></div>
+            </div>
+            <div class="nav3">
+                <li><a href="">Voetbal</a></li>
+                <li><a href="https://sportnieuws.nl/formule-1/">Formule 1<i class="icon-autosport"></i></a></li>
+                <li><a href="https://sportnieuws.nl/dartnieuws/">Darts</a></li>
+                <li><a href="https://sportnieuws.nl/vechtsport/">Vechtsport<i class="icon-flag"></i></a></li>
+                <li><a href="https://sportnieuws.nl/wielrennen/">Wielrennen</a></li>
+                <li><a target="_blank" href="https://www.score4.scoregames.nl/">Voorspel &#038; Win</a></li>
+                <li>
+                    <a>Meer</a>
+            </div>
+        </div>
+        <div class="home">
+            <div class="containerblok1">
+                <div class="blok1">
+                    <div class="blok11">
+                        <img src="images/headerfoto.png" height="100%" width="100%" alt="">
+                    </div>
+                    <div class="containerblok12">
+                        <div class="blok12">
+                            <img src="images/hondaheader.png" height="100%" width="100%" alt="">
+                        </div>
+                        <div class="blok13">
+                            <img src="images/verstappenheader.png" height="100%" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blok2">
+                <img src="images/raceoverzicht.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="blok3">
+                <div class="blok31">
+                    <h2>Formule 1</h2>
+                    <div class="blokf1">
+                        <div class="blok311">
+                            <div class="deel1">
+                                <div class="links"><img src="images/nickdevries.jpg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">Nyck de Vries slaapt thuis in Monaco tijdens jacht o...</div>
+                            </div>
+                            <div class="deel2">
+                                <div class="links"><img src="images/honda.jpg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">Honda blijft behouden voor Formule 1: gaat motor...</div>
+                            </div>
+                        </div>
+                        <div class="blok311">
+                            <div class="deel1">
+                                <div class="maxlinks"><img src="images/maxfoto.jpg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">Max Verstappen kijkt uit naar 'thuisrace' in Monac...</div>
+                            </div>
+                            <div class="deel2">
+                                <div class="links"><img src="images/astoncar.jpg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">Honda-motoren terug in de Formule 1... bij Aston...</div>
+                            </div>
+                        </div>
+                        <button onclick="tellen()">mooi</button>
+                        <div class="blok311">
+                            <div class="deel1">
+                                <div class="links"><img src="images/hamilton2.jpg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">Sensatie in Formule 1: 'Ferrari wil Lewis Hamilto...</div>
+                            </div>
+                            <div class="deel2">
+                                <div class="maxlinks"><img src="images/maxfoto5.jpg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">Dit doet Max Verstappen zondag nu de GP van...</div>
+                            </div>
+                        </div>
+                        <div class="blok311">
+                            <div class="deel1">
+                                <div class="links"><img src="images/nickdevries1.jpg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">'Het zal op Europese  circuits beter gaan voor...</div>
+                            </div>
+                            <div class="deel2">
+                                <div class="links"><img src="images/yuki.jpeg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">Yuki Tsunoda laat zich van zijn beste kant zien:...</div>
+                            </div>
+                        </div>
+                        <div class="blok311">
+                            <div class="deel1">
+                                <div class="links"><img src="images/nickdevries2.jpg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">Nyck de Vries maakt onverwachte pitstop op d...</div>
+                            </div>
+                            <div class="deel2">
+                                <div class="maxlinks"><img src="images/maxfoto6.jpg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">F1-race valt in het water: Grand Prix van Emilia-...</div>
+                            </div>
+                        </div>
+                        <div class="blok311">
+                            <div class="deel1">
+                                <div class="links"><img src="images/hotel.png" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">F1-Personeel geevacueerd van Imola...</div>
+                            </div>
+                            <div class="deel2">
+                                <div class="links"><img src="images/ijzer.png" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">Kelly Piquet laat scoort metalen dildo op Instagra...</div>
+                            </div>
+                        </div>
+                        <div class="blok311">
+                            <div class="deel1">
+                                <div class="links"><img src="images/alonso1.jpg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">Op welke circuits is Red Bull te verslaan? Fernan...
+                                </div>
+                            </div>
+                            <div class="deel2">
+                                <div class="links"><img src="images/regen.jpg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">GP van Emilia-Romagna kan een...</div>
+                            </div>
+                        </div>
+                        <div class="blok311">
+                            <div class="deel1">
+                                <div class="maxlinks"><img src="images/maxfoto7.jpg" height="100%" width="100%" alt=""></div>
+                                <div class="rechts">Max Verstappen wordt gepest: 'je typt als...</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <h3>Meer nieuws</h3>
+                </div>
+                <div class="blok32">
+                    <div class="buttonblok">
+                        <button class="teams" onclick="changetabelt()">Teams</button>
+                        <button class="coureurs" onclick="changetabelc()">Coureurs</button>
+                    </div>
+                    <img id="teamsfoto" src="images/afbeeldingteams.png" height="90%" alt="">
+                    <img id="coureursfoto" src="images/afbeeldingcoureurs.png" height="90%">
+                </div>
+            </div>
+            <div class="blok4">
+                <h2>Max Verstappen</h2>
+                <div class="blokmaxverstappen1">
+                    <div class="blok41">
+                        <div class="fotoblok"><img src="images/honda.jpg" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Honda blijft behouden voor Formule 1: gaat...</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="maxfotoblok"><img src="images/maxfoto.jpg" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Max Verstappen kijkt uit naar 'thuisrace' in...</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="fotoblok"><img src="images/astoncar.jpg" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">
+                            Honda-motoren terug in de Formule 1... bij Aston...
+                        </div>
+                    </div>
+                    <div class="blok41">
+                        <div class="maxfotoblok"><img src="images/maxfoto2.jpg" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">
+                            Dit doet Max Verstappen zondag nu de GP van...
+                        </div>
+                    </div>
+                    <div class="blok41">
+                        <div class="maxfotoblok"><img src="images/maxfoto3.jpg" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">F1-race valt in het water: Grand Prix van Emilia-....</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="fotoblok"><img src="images/ijzer.png" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Kelly Piquet laat soort metalen dildo op...</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="fotoblok"><img src="images/alonso1.jpg" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Op welke circuits is Red Bull te verslaan?....</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="maxfotoblok"><img src="images/maxfoto4.png" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Max Verstappen wordt gepest: 'je typt al..</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="maxfotoblok"><img src="images/maxfoto5.jpg" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Dit kost een ticket voor de Max Verstappen...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="blok5">
+                <h2>Video</h2>
+                <div class="blokmaxverstappen1">
+                    <div class="blok41">
+                        <div class="fotoblok"><img src="images/hotel.png" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">F1-Personeel geevacueer van imola-...</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="maxfotoblok"><img src="images/maxfoto4.png" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Max Verstappen wordt gepest: 'je typt al..</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="maxfotoblok"><img src="images/maxfoto6.jpg" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Met deze nieuwe looks scheurt Max...</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="fotoblok"><img src="images/alonso2.png" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Bevestigt Fernando Alonso hier zij....</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="fotoblok"><img src="images/hamilton.jpg" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Lewis Hamilton over zijn actie in Qatar 'ik ga dit....</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="maxfotoblok"><img src="images/maxfoto7.jpg" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Jonglerende Max Verstappen solliciteert..</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="fotoblok"><img src="images/lecler.png" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Wow! Bizarre video van Charles Lecler die i...</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="maxfotoblok"><img src="images/maxfoto8.jpg" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Verstappen na rommelige 1e dag in...</div>
+                    </div>
+                    <div class="blok41">
+                        <div class="fotoblok"><img src="images/ricardo.png" height="100%" width="100%" alt=""></div>
+                        <div class="textblok">Vette beelden: Daniel Ricciardo racet in Red B...</div>
+                    </div>
+                </div>
+                <h3>Meer video's</h3>
+            </div>
+        </div>
+        <div class="footer"><img id="footerfoto" src="images/footer.png" height="100%" width="100%" alt=""></div>
+    </div>
+</body>
+
+</html>
