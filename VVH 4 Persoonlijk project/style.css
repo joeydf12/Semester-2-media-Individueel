@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+/* JOEY DE FIJTER */
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Staatliches', cursive;
+}
+
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    display: flex;
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    background-color: white;
+}
+
+/* NAVBAR */
+.logonavbarlinks {
+    display: flex;
+    justify-content: left;
+    margin: auto
+}
+
+.logonavbarrechts {
+    display: flex;
+    justify-content: right;
+    margin: auto
+}
+
+.navbaritems,
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbaritems,
+li {
+    float: left;
+    padding: 5px;
+}
+
+.navbaritems,
+li a {
+    color: #0061AA;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.navbaritems,
+li a:hover {
+    color: black;
+}
+
+.iconhamburger {
+    background-color: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* copy  */
+.header {
+    overflow: hidden;
+    position: relative;
+}
+
+.header #mytopnav {
+    display: flex;
+}
+
+.header a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* HOME */
+/* homescreen */
+
+.homescreen {
+    height: 85vh;
+    background-color: aqua;
+    background-image: url(images/achtergrondhome.jpg);
+    background-size: cover;
+    display: flex;
+    gap: 100px;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/* Buttons home screen */
+
+.playerbutton {
+    background-color: white;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    margin-left: 20%;
+    z-index: 2;
+    margin-top: 120%;
+    position: relative;
+    color: #0061AA;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playerbutton a {
+    text-decoration: none;
+    font-size: 2.5vw;
+}
+
+.upcomminggame a {
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.playerbutton:hover,
+.upcomminggame:hover {
+    background-color: #0061AA;
+    color: white;
+}
+
+
+.upcomminggame {
+    background-color: white;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    margin-left: 20%;
+    margin-top: 120%;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #0061AA;
+
+}
+
+/* Tekst onderaan home pagina */
+
+.textunderhome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 1.5vw;
+    margin-top: 5%;
+    color: #0061AA;
+}
+
+.textunderhome p {
+    margin-top: 2%;
+    font-size: 2vw;
+    margin-bottom: 5%;
+}
+
+/* BUTTONS onderaan home pagina  */
+
+.buttonshomescreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20%;
+    margin-bottom: 5%;
+}
+
+#logoresponsive {
+    display: none;
+}
+
+
+#button1onderscherm,
+#button2onderscherm {
+    width: 20vw;
+    height: 10vh;
+    font-size: 2.5rem;
+    color: white;
+    background-color: #0061AA;
+    justify-content: center;
+    align-items: center;
+}
+
+#button1onderscherm:hover,
+#button2onderscherm:hover {
+    color: black;
+}
+
+/* NAVBAR EN HOMEPAGE */
+@media only screen and (max-width: 600px) {
+
+    .logonavbarrechts,
+    .logonavbarlinks {
+        display: none;
+    }
+
+    .navbaritems,
+    li a {
+        font-size: 2.5vw;
+    }
+
+    .homescreen {
+        background-image: url(images/achtergrondhome.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 25vh;
+        background-color: white;
+        flex-direction: column;
+        gap: 15%;
+    }
+
+    .playerbutton {
+        background-color: #0061AA;
+        width: 80vw;
+        height: 8vh;
+        color: white;
+        margin-top: 100%;
+        margin-left: 10%;
+
+    }
+
+    .upcomminggame {
+        background-color: #0061AA;
+        width: 80vw;
+        height: 8vh;
+        margin-top: 0%;
+        margin-left: 10%;
+        color: white;
+    }
+
+    .playerbutton a,
+    .upcomminggame a {
+        font-size: 7.5vw;
+    }
+
+    .underscreen {
+        margin-top: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textunderhome h1 {
+        font-size: 6vw;
+    }
+
+    .textunderhome p {
+        margin-top: 2%;
+        font-size: 3.5vw;
+        padding: 0% 5% 0% 5%;
+    }
+
+    .buttonshomescreen {
+        flex-direction: column;
+
+        height: 100%;
+        gap: 10%;
+        margin-bottom: 25%;
+    }
+
+    #button1onderscherm,
+    #button2onderscherm {
+        width: 80vw;
+        height: 5vh;
+        font-size: 1rem;
+    }
+
+    .navbaritems {
+        margin-left: 10%;
+    }
+
+    #logoresponsive {
+        display: flex;
+        width: 50vw;
+        margin-bottom: 25%;
+    }
+
+    .header #mytopnav {
+        display: none;
+
+    }
+
+    .header #mytopnav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .header #mytopnav ul li {
+        width: 100%;
+        z-index: 11;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header #mytopnav ul li a {
+        font-size: 5vw;
+    }
+
+    
+    .iconhamburger {
+        width: 100%;
+        background-color: white;
+        z-index: 10;
+    }
+
+    #iconmenu {
+        float: right;
+        margin-right: 2%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .header #mytopnav  {
+        background-color: #0061AA;
+        margin-left: 0%;
+        margin-top: 5%;
+        width: 100vw;
+    }
+
+    .header #mytopnav ul li a {
+        color: white;
+    }
+
+    #fotohome {
+        height: 50%;
+    }
+    #gobackhomescreen {
+        background-color: white;
+        color: red;
+        font-size: 2rem;
+        margin-top: 70%;
+    }
+    
+}
+
+/* HAMBURGER MENU NIET LATEN ZIEN ALS SCHERM GROOT IS */
+@media only screen and (min-width: 600px) {
+    .iconhamburger {
+        display: none;
+    }
+}
+/* aankomende wedstrijd homescreen */
+#hoverhomepage {
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    position: relative;
+    justify-content: center;
+
+}
+
+#fotohome {
+    z-index: -10;
+    display: flex;
+}
+
+#gobackhomescreen {
+    background-color: white;
+    color: #0061AA;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    margin-top: 8%;
+}
+
+/* players */
+
+.keepers {
+    background-color: white;
+    display: grid;
+}
+
+.playerbjorn,
+.playerbas,
+.playervictor,
+.playerdaan,
+.playerwouter,
+.playergoof,
+.playerbram,
+.playerglenn,
+.playergijs,
+.playerleon,
+.playerlars,
+.playerpaul,
+.playerjarno,
+.playertristan,
+.playersiem,
+.playerjoey,
+.playermees,
+.playervalentijn,
+.playerfaisel,
+.playerjasper,
+.playerricardo,
+.playerlucas {
+    height: 100%;
+    border-radius: 10%;
+    overflow: hidden;
+    margin: 0 auto;
+    transition: 0.5s all ease-in-out;
+}
+
+.player img:hover {
+    transform: scale(1.1);
+    height: 102%;
+}
+
+.spelers {
+    margin: 3%;
+}
+
+.kaarten {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2%;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+}
+
+/* Statistieken spelers pagina */
+#statistieken {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    height: 30vh;
+    width: 95vw;
+    color: white;
+    font-size: 1rem;
+    justify-content: space-between;
+
+}
+
+.blok1stats,
+.blok3stats {
+    height: 100%;
+    width: 40vw;
+    background-color: #0061AA;
+    border-radius: 2%;
+
+}
+
+.upblok1 {
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+}
+
+.upblok1,
+.downblok1 {
+    font-size: 2vw;
+    padding-left: 5%;
+    height: 50%;
+    display: flex;
+}
+
+
+.upblok1 p1 {
+    font-size: 2vw;
+}
+
+.downblok1 {
+
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.downblok1 p1 {
+    font-size: 2vw;
+}
+
+
+.blok3stats {
+    display: flex;
+    flex-direction: column;
+    font-size: 2vw;
+}
+
+#upblok3 {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#downblok3 {
+    height: 50%;
+    display: flex;
+
+}
+
+
+
+#linksblok3 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#rechtsblok3 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.spelers h2 {
+    color: #0061AA;
+    border-bottom: 5px solid #0061AA;
+    margin-bottom: 2%;
+}
+
+/* SPELERS STATESTIEKEN MOBIEL */
+@media only screen and (max-width: 600px) {
+
+    .blok1stats,
+    .blok3stats {
+        width: 94vw;
+    }
+
+    #statistieken {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .upblok1,
+    .downblok1 {
+        font-size: 4vw;
+        padding-left: 5%;
+        height: 50%;
+    }
+
+    .upblok1 p1,
+    .downblok1 p1 {
+        font-size: 7vw;
+    }
+
+    #downblok3,
+    #upblok3 {
+        font-size: 5vw;
+    }
+
+    .player {
+        height: 150px;
+        width: 150px;
+    }
+
+    .spelers h2 {
+        margin-top: 10%;
+    }
+}
+
+
+/* loser of the match  en man of the match pagina */
+.lotmhome,
+.motmhome {
+    height: 80vh;
+    background-size: cover;
+
+
+}
+
+.lotmunderhome,
+.motmunderhome {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: 60vh;
+
+}
+
+.lotm1,
+.lotm2,
+.lotm3,
+.motm1,
+.motm2,
+.motm3 {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    background-color: #0061AA;
+    color: white;
+    border: 1px solid #ccc;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 80%;
+    width: 90%;
+
+}
+
+
+.lotm1,
+.lotm2,
+.lotm3,
+.motm1,
+.motm2,
+.motm3 {
+    color: transparent;
+}
+
+.lotm1 {
+    background-image: url(images/jasperlotmtrim.png);
+    background-size: cover;
+}
+
+.lotm1:hover {
+    background-image: none;
+    background-color: #0061AA;
+    color: white;
+}
+
+.lotm2 {
+    background-image: url(images/baslotmtrim.png);
+    background-size: cover;
+}
+
+.lotm2:hover {
+    background-image: none;
+    background-color: #0061AA;
+    color: white;
+}
+
+.lotm3 {
+    background-image: url(images/wouterlotmtrim.png);
+    justify-content: center;
+    background-size: cover;
+
+}
+
+.lotm3:hover {
+    background-image: none;
+    background-color: #0061AA;
+    color: white;
+}
+
+.motm1 {
+    background-image: url(images/lotmleontrim.png);
+    background-size: cover;
+}
+
+.motm1:hover {
+    background-image: none;
+    background-color: #0061AA;
+    color: white;
+}
+
+.motm2 {
+    background-image: url(images/jasperlotmtrim.png);
+    background-size: cover;
+}
+
+.motm2:hover {
+    background-image: none;
+    background-color: #0061AA;
+    color: white;
+}
+
+.motm3 {
+    background-image: url(images/larslotmtrim.png);
+    justify-content: center;
+    background-size: cover;
+
+}
+
+.motm3:hover {
+    background-image: none;
+    background-color: #0061AA;
+    color: white;
+}
+
+/* MOTM EN LOTM MOBIEL */
+@media only screen and (max-width: 600px) {
+
+    .lotmhome,
+    .motmhome {
+        height: 30vh;
+        width: 100vw;
+        margin-top: 10%;
+    }
+
+
+    
+
+    .lotm1:hover,
+    .lotm2:hover,
+    .lotm3:hover,
+    .motm1:hover,
+    .motm2:hover,
+    .motm3:hover {
+        font-size: 2rem;
+    }
+
+    .lotmunderhome,
+    .motmunderhome {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 0fr));
+        height: 110vh;
+        margin-top: 15%;
+        justify-content: center;
+
+    }
+
+    .lotm1{
+        background-image: url(images/jasperlotmlint.png);
+    }
+
+    .lotm2{
+        background-image: url(images/basjelotmlint.png);
+    }
+
+    .lotm3 {
+        background-image: url(images/wouterlotmlint.png);
+    }
+
+    .motm1{
+        background-image: url(images/leonlotmlint.png);
+    }
+
+    .motm2 {
+        background-image: url(images/jasperlotmlint.png);
+    }
+
+    .motm3{
+        background-image: url(images/larslotmlint.png);
+    }
+}
+
+
+/* spelerspagina */
+.playerpagehome {
+    height: 85vh;
+    display: flex;
+    z-index: -1;
+    position: relative;
+}
+
+.homefoto {
+    width: 100%;
+    height: 100%;
+}
+
+/* SWITCH */
+
+.buttonswitch {
+    display: flex;
+    z-index: 10;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+
+}
+
+.buttonstats,
+.buttonprofile {
+
+    color: white;
+    width: 10%;
+    font-size: 1.5rem;
+}
+
+.playerpageunder {
+
+    height: 50vh;
+    display: flex;
+}
+
+#playersstats,
+#playerprofile {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 20px;
+    align-items: center;
+}
+
+#playersstats p,
+#playerprofile p {
+    font-size: 2.5vw;
+
+}
+
+#playersstats p1,
+#playerprofile p1 {
+    color: #0061AA;
+    font-size: 2vw;
+    margin-top: 1%;
+}
+
+
+#playersstats {
+    display: none;
+
+}
+
+#buttonstats,
+#buttonprofile {
+    background-color: #0061AA;
+    color: white;
+    width: 8vw;
+    height: 5vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* SPELERSPAGINA MOBIEL */
+@media only screen and (max-width: 600px) {
+    .homefoto{
+        height: 30vh;
+        width: 100vw;
+        margin-top: 15%;
+    }
+
+    .playerpagehome {
+        height: 25vh;
+    }
+
+    #fotoprofile {
+        display: none;
+    }
+
+    .buttonswitch{
+        top: 45%;
+    }
+
+    .playerpageunder{
+        display: flex;
+        justify-content: center;
+        margin-top: 20%;
+    }
+
+    #playersstats p, #playerprofile p {
+        font-size: 4.5vw;
+    }
+
+    #playersstats p1, #playerprofile p1 {
+        font-size: 4vw;
+    }
+
+    #playersstats, #playerprofile {
+        width: 90vw;
+    }
+
+    #buttonstats, #buttonprofile {
+        width: 25vw;
+    }
+
+    
+      
+
+}
